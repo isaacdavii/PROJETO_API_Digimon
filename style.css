@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/Digimon-guilmon-1357631-wallhere.com.jpg');
+    /* Substitua 'background_image.jpg' pelo caminho da sua imagem de fundo */
+    background-size: center;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo preto semi-transparente */
+    padding: 20px;
+}
+
+#digimonForm {
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label,
+select,
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+select:focus,
+button:focus {
+    outline: none;
+}
+
+button {
+    background-color: #28a745;
+}
+
+#digimonInfo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#digimonInfo h2 {
+    margin-bottom: 10px;
+}
+
+#digimonInfo img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sideImage {
+    width: 250px;
+    height: auto;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
