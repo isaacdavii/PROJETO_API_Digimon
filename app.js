@@ -1,4 +1,4 @@
-function populateDigimonNames() {
+function nomesPopularesDigimon() {
     var level = document.getElementById("level").value;
     fetch(`https://digimon-api.vercel.app/api/digimon/level/${level}`)
         .then(response => response.json())
@@ -15,7 +15,7 @@ function populateDigimonNames() {
         .catch(error => console.error('Error:', error));
 }
 
-function getDigimon() {
+function pegarDigimon() {
     var level = document.getElementById("level").value;
     var name = document.getElementById("name").value;
     fetch(`https://digimon-api.vercel.app/api/digimon/name/${name}`)
