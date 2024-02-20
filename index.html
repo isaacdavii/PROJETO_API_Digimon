@@ -13,7 +13,7 @@
   <img id="sideImage" src="img\DigiVice_29.webp" alt="Descrição da imagem">
   <form id="digimonForm">
     <label for="level">Level:</label>
-    <select id="level" onchange="populateDigimonNames()">
+    <select id="level" onchange="nomesPopularesDigimon()">
       <option value="In Training">In Training</option>
       <option value="Rookie">Rookie</option>
       <option value="Champion">Champion</option>
@@ -22,7 +22,7 @@
     </select><br><br>
     <label for="name">Nome:</label>
     <select id="name"></select><br><br>
-    <button type="button" onclick="getDigimon()">Mostrar Digimon</button>
+    <button type="button" onclick="pegarDigimon()">Mostrar Digimon</button>
   </form>
   <div id="digimonInfo"></div>
 
