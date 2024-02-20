@@ -35,4 +35,4 @@ function mostrarDigimon(digimon) {
 `;
 }
 
-populateDigimonNames();
+nomesPopularesDigimon();
