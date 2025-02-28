@@ -15,3 +15,35 @@ Este projeto consiste em uma simples aplicação web que permite aos usuários c
 - HTML
 - CSS
 - JavaScript
+
+## Como Executar o Projeto
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+
+2. **Navegue até o diretório do projeto**:   
+   ```bash 
+   cd seu-repositorio   
+
+3. **Abra o arquivo index.html no seu navegador**:
+   
+    No Windows, você pode simplesmente clicar duas vezes no arquivo index.html.
+    Ou, você pode usar um servidor HTTP simples para servir o arquivo. Por exemplo, com Python:
+   
+    ```bash 
+    python -m http.server
+    ```    
+    E então abra `http://localhost:8000` no seu navegador.
+
+5. **Como Contribuir**
+
+    - Faça um fork do projeto.
+    - Crie uma nova branch com a sua feature: `git checkout -b minha-feature`;
+    - Commit suas mudanças: `git commit -m 'Adiciona minha feature'`;
+    - Faça um push para a branch: `git push origin minha-feature`;
+    - Envie um Pull Request`.
+    
+## Contato
+
+   Para mais informações, entre em contato com izaacddavid98@gmail.com.
