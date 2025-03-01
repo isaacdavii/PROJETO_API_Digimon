@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Consulta Digimon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Digimon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Consulta Digimon</h1>
-  <img id="sideImage" src="img\DigiVice_29.webp" alt="Descrição da imagem">
-  <form id="digimonForm">
-    <label for="level">Level:</label>
-    <select id="level" onchange="nomesPopularesDigimon()">
-      <option value="In Training">In Training</option>
-      <option value="Rookie">Rookie</option>
-      <option value="Champion">Champion</option>
-      <option value="Ultimate">Ultimate</option>
-      <option value="Mega">Mega</option>
-    </select><br><br>
-    <label for="name">Nome:</label>
-    <select id="name"></select><br><br>
-    <button type="button" onclick="pegarDigimon()">Mostrar Digimon</button>
-  </form>
-  <div id="digimonInfo"></div>
-
-  <script src="app.js"></script>
-
+    <div class="container text-center">
+        <h1 class="text-center my-4">Consulta Digimon</h1>
+        <div class="digivice-container">
+            <img id="sideImage" src="img/Digivice_tri.webp" alt="Descrição da imagem" class="img-fluid">
+            <div id="digimonInfo" class="digimon-info"></div>
+        </div>
+        <form id="digimonForm" aria-labelledby="formTitle" class="mb-4">
+            <div class="form-group">
+                <label for="level">Level:</label>
+                <select id="level" class="form-control" onchange="nomesPopularesDigimon()" aria-required="true">
+                    <option value="In Training">In Training</option>
+                    <option value="Rookie">Rookie</option>
+                    <option value="Champion">Champion</option>
+                    <option value="Ultimate">Ultimate</option>
+                    <option value="Mega">Mega</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <select id="name" class="form-control" aria-required="true"></select>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="pegarDigimon()">Mostrar Digimon</button>
+        </form>
+        <div id="loading" class="text-center" style="display: none;">Carregando...</div>
+    </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
