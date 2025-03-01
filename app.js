@@ -1,10 +1,14 @@
 function mostrarDigimon(digimon) {
     var digimonInfo = document.getElementById("digimonInfo");
+    var sideImage = document.getElementById("sideImage");
 
     // Remover a classe de animação, forçando o reflow, e adicioná-la novamente
     digimonInfo.classList.remove("animate");
-    void digimonInfo.offsetWidth;
+    sideImage.classList.remove("animate");
+    void digimonInfo.offsetWidth; 
+    void sideImage.offsetWidth; 
     digimonInfo.classList.add("animate");
+    sideImage.classList.add("animate");
 
     digimonInfo.innerHTML = `
         <img src="${digimon.img}" alt="${digimon.name}" class="img-fluid">
