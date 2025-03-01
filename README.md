@@ -42,7 +42,7 @@ Este projeto consiste em uma simples aplicação web que permite aos usuários c
     - Crie uma nova branch com a sua feature: `git checkout -b minha-feature`;
     - Commit suas mudanças: `git commit -m 'Adiciona minha feature'`;
     - Faça um push para a branch: `git push origin minha-feature`;
-    - Envie um Pull Request`.
+    - Envie um Pull Request.
     
 ## Contato
 
