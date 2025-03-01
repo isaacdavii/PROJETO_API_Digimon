@@ -49,8 +49,8 @@ h1 {
     top: 49%; /* Ajuste este valor para mover o texto e a imagem para cima ou para baixo */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 93px; /* Ajuste conforme necessário */
-    height: 93px; /* Ajuste conforme necessário */
+    width: 93px; /* Largura do visor */
+    height: 93px; /* Altura do visor */
     text-align: center; /* Centralizar o texto */
     font-family: 'VT323', monospace; /* Fonte tipo LCD */
     color: #00ff00; /* Cor verde para imitar visor digital */
@@ -63,11 +63,11 @@ h1 {
 @keyframes growIn {
     from {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0); /* Começa com escala 0 */
+        transform: translate(-50%, -50%) scale(0);
     }
     to {
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1); /* Cresce até escala 1 */
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
