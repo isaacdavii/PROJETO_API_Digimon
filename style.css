@@ -32,6 +32,18 @@ h1 {
     height: auto;
 }
 
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#sideImage.animate {
+    animation: vibrate 0.2s ease-in-out 3;
+}
+
 .digimon-info {
     position: absolute;
     top: 49%; /* Ajuste este valor para mover o texto e a imagem para cima ou para baixo */
@@ -60,10 +72,12 @@ h1 {
 }
 
 #digimonForm {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 20px;
 }
 
 #digimonForm .form-group {
