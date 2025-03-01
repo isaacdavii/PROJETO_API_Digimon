@@ -1,78 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Fonte futurista */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /* Fonte tipo LCD */
+
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/Digimon-guilmon-1357631-wallhere.com.jpg');
-    /* Substitua 'background_image.jpg' pelo caminho da sua imagem de fundo */
-    background-size: center;
+    background-color: #f8f9fa; /* Adicione uma cor de fundo alternativa, se desejar */
+    background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #000; /* Alterar a cor do texto para preto para melhor contraste */
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    text-align: center;
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
     background-color: rgba(0, 0, 0, 0.7);
-    /* Fundo preto semi-transparente */
     padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* Manter o texto do título em branco para contraste */
+}
+
+.digivice-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%; /* Certifique-se de que o contêiner pode crescer */
+    max-width: 320px; /* Ajuste conforme necessário */
+}
+
+#sideImage {
+    width: 100%;
+    height: auto;
+}
+
+.digimon-info {
+    position: absolute;
+    top: 49%; /* Ajuste este valor para mover o texto e a imagem para cima ou para baixo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 93px; /* Ajuste conforme necessário */
+    height: 93px; /* Ajuste conforme necessário */
+    text-align: center; /* Centralizar o texto */
+    font-family: 'VT323', monospace; /* Fonte tipo LCD */
+    color: #00ff00; /* Cor verde para imitar visor digital */
+}
+
+.animate {
+    animation: growIn 1s ease-in-out forwards; /* Animação de entrada */
+}
+
+@keyframes growIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0); /* Começa com escala 0 */
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1); /* Cresce até escala 1 */
+    }
 }
 
 #digimonForm {
-    width: 300px;
-    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-label,
-select,
-button {
-    display: block;
-    margin-bottom: 10px;
+#digimonForm .form-group {
+    margin-bottom: 15px;
 }
 
-select,
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+#digimonForm label {
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    color: #fff;
+}
+
+#digimonForm select,
+#digimonForm button {
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+#digimonForm button {
     background-color: #007bff;
     color: #fff;
-    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
 }
 
-select:focus,
-button:focus {
-    outline: none;
-}
-
-button {
-    background-color: #28a745;
-}
-
-#digimonInfo {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#digimonInfo h2 {
-    margin-bottom: 10px;
+#digimonForm button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Efeito de brilho */
 }
 
 #digimonInfo img {
-    width: 250px;
+    width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#sideImage {
-    width: 250px;
-    height: auto;
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
+#loading {
+    font-size: 1.2em;
+    color: #fff;
 }
