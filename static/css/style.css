@@ -11,12 +11,21 @@ body {
     padding: 0;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
 h1 {
     font-family: 'Orbitron', sans-serif; /* Fonte futurista */
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     color: #fff; /* Manter o texto do título em branco para contraste */
+}
+
+body.dark-mode h1 {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .digivice-container {
@@ -56,6 +65,10 @@ h1 {
     color: #00ff00; /* Cor verde para imitar visor digital */
 }
 
+body.dark-mode .digimon-info {
+    color: #00ff00; /* Cor verde para imitar visor digital */
+}
+
 .animate {
     animation: growIn 1s ease-in-out forwards; /* Animação de entrada */
 }
@@ -80,12 +93,21 @@ h1 {
     padding: 20px;
 }
 
+body.dark-mode #digimonForm {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 #digimonForm .form-group {
     margin-bottom: 15px;
 }
 
 #digimonForm label {
     font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    color: #fff;
+}
+
+body.dark-mode #digimonForm label {
     color: #fff;
 }
 
@@ -117,4 +139,19 @@ h1 {
 #loading {
     font-size: 1.2em;
     color: #fff;
+}
+
+body.dark-mode #loading {
+    color: #fff;
+}
+
+.btn {
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px #007bff; }
+    50% { box-shadow: 0 0 20px #007bff; }
+    100% { box-shadow: 0 0 10px #007bff; }
 }

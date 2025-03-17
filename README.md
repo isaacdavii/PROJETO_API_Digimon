@@ -8,7 +8,8 @@ Este projeto consiste em uma simples aplicação web que permite aos usuários c
 
 - Escolha o nível do Digimon através de um menu suspenso.
 - Escolha o nome do Digimon disponível para o nível selecionado.
-- Exibe informações detalhadas sobre o Digimon selecionado, incluindo nome, nível e imagem.
+- Escolha entre o modo claro ou escuro.
+- Escolha entre dois tipos diferentes de digivice.
 
 ## Tecnologias Utilizadas
 

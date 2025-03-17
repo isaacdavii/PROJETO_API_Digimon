@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta Digimon</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
     <div class="container text-center">
         <h1 class="text-center my-4">Consulta Digimon</h1>
+        <button id="toggleDarkMode" class="btn btn-secondary mb-4" onclick="toggleDarkMode()">Modo Escuro</button>
+        <button id="toggleDigivice" class="btn btn-secondary mb-4" onclick="toggleDigivice()">Trocar Digivice</button>
         <div class="digivice-container">
-            <img id="sideImage" src="img/Digivice_tri.webp" alt="Descrição da imagem" class="img-fluid">
+            <img id="sideImage" src="../static/img/Digivice_tri.webp" alt="Descrição da imagem" class="img-fluid">
             <div id="digimonInfo" class="digimon-info"></div>
         </div>
         <form id="digimonForm" aria-labelledby="formTitle" class="mb-4">
@@ -36,7 +38,9 @@
               <span class="sr-only">Carregando...</span>
           </div>
       </div>
+      <audio id="digiviceSound" src="../static/sounds/digivice-sound.mp3" preload="auto"></audio>
+    <div id="response" class="mt-4"></div>
     </div>
-    <script src="app.js"></script>
+    <script src="../static/js/app.js"></script>
 </body>
 </html>
